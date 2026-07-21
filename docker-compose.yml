@@ -1,5 +1,4 @@
 version: "3.8"
-
 services:
   mysql:
     user: "${UID}:${GID}" 
@@ -21,7 +20,6 @@ services:
       timeout: 5s
       retries: 5
       start_period: 60s
-
   flask-app:
     image: trainwithshubham/two-tier-flask-app:latest
     container_name: flask-app

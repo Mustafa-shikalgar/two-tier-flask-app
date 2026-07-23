@@ -2,14 +2,14 @@
 OS := $(shell uname)
 
 # Define Docker compose command
-DOCKER_COMPOSE := docker-compose
+DOCKER_COMPOSE := docker-compose 
 
-# Define Docker compose service name
+# Define Docker compose service name 
 SERVICE_NAME := web
 
 # Build target
 build:
-ifeq ($(OS),Linux)
+ifeq ($(OS),Linux) 
 	@echo "Building for Linux"
 	$(DOCKER_COMPOSE) build
 endif
